@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%20|%20Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%20|%20Hind:300,400,500,600,700');
+
+
+a{
+	text-decoration: none;
+}
+
+.side-bar-cont{
+	min-width: 350px;
+	background-color: red;
+}
+
+.side-bar-bg-cont{
+	position: fixed;
+	/* left: 0; */
+	height: 100%;
+	width: 350px;
+	/* max-width: 350px; */
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.side-bar-contents-cont, .side-bar-bg-cont, .page-cont, .side-bar-contents-cont, .side-bar-contents-cont li{
+	display: flex;
+}
+
+.side-bar-contents-cont{
+	list-style: none;
+	flex-direction: column;
+	padding: 1rem 8px;
+	width: 100%;
+}
+
+.side-bar-contents-cont li{
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.side-bar-contents-cont li:hover{
+	background-color: #eee;
+}
+
+.side-bar-contents-cont li.side-bar-header{
+	cursor: default;
+}
+
+.side-bar-contents-cont li.side-bar-header > i{
+	padding: 6px 8px;
+	font-size: 1.5rem;
+}
+
+.side-bar-contents-cont li.side-bar-header:hover{
+	background-color: transparent;
+}
+
+.side-bar-contents-cont li > i, .left-content > i{
+	padding: 8px 10px;
+	font-size: 1.3rem;
+	border-radius: 100%;
+	background-color: #ddd;
+}
+
+.side-bar-contents-cont li > i.chev{
+	color: rgba(0, 0, 0, 0.3);
+	padding: 0;
+	font-weight: 600;
+	font-size: 1.1rem;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.left-content > i{
+	margin-right: 8px;
+}
+
+.side-bar-contents-cont li > .active > i{
+	color: #fff;
+	background-color: blue;
+}
+
+.side-bar-contents-cont li.active{
+	background-color: #eee;
+}
+
+.side-bar-contents-cont li > .left-content span{
+	font-weight: 600;
+}
+
+.side-bar-contents-cont li > .left-content.side-bar-title > span{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.find-know-peeps-cont{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	/* border: 2px solid #000; */
+}
+
+.find-know-peeps{
+	width: 100%;
+	/* overflow: hidden; */
+	/* max-width: 980px; */
+}
+
+.img-card-cont{
+	padding: 1rem 8px;
+}
+
+.find-know-peeps-cont{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.find-know-peeps-header-cont{
+	flex-wrap: wrap;
+	width: 100%;
+	/* max-width: 1150px; */
+	padding-top: 1rem;
+}
+
+.find-know-peeps-header-cont{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.all-img-cards-cont{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.img-card{
+	width: 100%;
+	max-width: 220px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.card-info-cont, .img-card, .find-know-peeps{
+	flex-direction: column;
+}
+
+.add-remove-btn-cont, .img-cont, .img-card-cont, .add-friend-cont, .add-friend-btn, .remove-friend-btn, .mutual-chomies-img, .find-know-peeps, .find-know-peeps-header-cont, .all-img-cards-cont, .find-know-peeps-footer-cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.find-know-peeps-header-cont,.find-know-peeps-footer-cont{
+	width: 100%;
+}
+
+.find-know-peeps-header-cont{
+	justify-content: space-between;
+}
+
+.all-img-cards-cont{
+	justify-content: stretch;
+}
+
+.all-img-cards-cont{
+	/* overflow: hidden; */
+	flex-wrap: wrap;
+}
+
+.find-know-peeps-header-cont h1{
+	color: #000;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.find-know-peeps-header-cont a{
+	border-radius: 5px;
+	padding: 8px 12px;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+
+.find-know-peeps-header-cont a:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img-cont, .mutual-chomies-img{
+	cursor: pointer;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.mutual-chomies-img{
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+}
+
+.img-2{
+	position: absolute;
+	left: 30%;
+	width: 22px;
+	height: 22px;
+	border: 2px solid #fff;
+}
+
+.img{
+	user-select: none;
+	max-width: 100%;
+}
+
+.chomies-img{
+	user-select: none;
+	width: 20px;
+	height: 20px;
+}
+
+.card-info-cont, .img-card, .add-remove-btn-cont, .mutual-chomies-img-cont, .mutual-chomies-cont{
+	display: flex;
+	position: relative;
+}
+
+.mutual-chomies-img-cont{
+	padding-right: 25px;
+}
+
+.mutual-chomies-cont{
+	justify-content: stretch;
+}
+
+.add-remove-btn-cont{
+	align-items: stretch;
+	flex-direction: column;
+}
+
+.card-title-cont, .mutual-chomies-cont{
+	padding-bottom: 6px;
+}
+
+.card-info-cont{
+	padding: 8px;
+}
+
+.card-title-cont a h1{
+	margin: 0;
+	color: #000;
+	font-size: 1.0625rem;
+	font-weight: 600;
+}
+
+.card-title-cont a{
+	line-height: 1.1765;
+}
+
+.mutual-chomies-cont span{
+	color: #606770;
+	font-size: .9375rem;
+}
+
+.add-friend-cont .remove-friend-cont, .add-remove-btn-cont{
+	width: 100%;
+}
+
+.add-friend-btn, .remove-friend-btn{
+	width: 100%;
+	outline: none;
+	border: none;
+	padding: 8px 18px;
+	background-color: #ECF3FF;
+	border-radius: 5px;
+	color: #1877F2;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-family: "Poppins", sans-serif;
+	transition: 0.3s;
+}
+
+.add-friend-btn{
+	margin-bottom: 6px;
+}
+
+.add-friend-btn span,.remove-friend-btn{
+	font-size: 14px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.remove-friend-btn{
+	color: #000;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.all-cards-cont{
+	width: 100%;
+	max-width: 1170px;
+}
+
+.find-know-peeps-footer-cont{
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.find-know-peeps-footer-cont{
+	padding: 1rem;
+}
+
+.find-know-peeps-footer-cont h1{
+	font-size: 1rem;
+	margin: 0;
+}
+
+.add-friend-btn:hover{
+	background-color: #AAC9FF;
+}
+
+.remove-friend-btn:hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.user{
+	padding-right: 8px;
+}
+
+@media screen and (max-width: 630px){
+	.side-bar-cont{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 520px){
+	.img-card{
+		width: 100%;
+		max-width: 100%;
+	}
+}

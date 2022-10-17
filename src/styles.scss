@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --facebook-blue: #1977f2;
+    --sblack: rgb(48, 48, 48);
+    --bg-gray: #f1f2f3;
+    --light-gray: rgb(211, 211, 211);
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+    background-color: var(--bg-gray);
+  }
+  
