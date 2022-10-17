@@ -13,29 +13,36 @@
           <div class="img-card-cont" *ngFor="1 of [1, 2, 3, 4, 5, 6]">
             <div class="img-card">
               <div class="img-cont">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="img">
+                <img src="{{people[0].profile_picture}}" class="img">
               </div>
               <div class="card-info-cont">
                 <div class="card-title-cont">
-                  <a href="#"><h1>Tharo Mataro</h1></a>
+                  <a href="#"><h1>{{people[0].name}} {{people[0].lastname}}</h1></a>
                 </div>
                 <div class="mutual-chomies-cont">
                   <div class="mutual-chomies-img-cont">
                     <div class="mutual-chomies-img">
-                      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" class="chomies-img">
+                      <img src="{{people[0].mutuals[0].profile}}" class="chomies-img">
                     </div>
                     <div class="mutual-chomies-img img-2">
-                      <img src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="chomies-img">
+                      <img src="{{people[0].mutuals[1].profile}}" class="chomies-img">
                     </div>
                   </div>
-                  <span>32 mutual friends</span>
+                  <span>{{people[0].mutualFriends}} mutual friends</span>
                 </div>
                 <div class="add-remove-btn-cont">
-                  <div class="add-friend-cont">
+                  <div class="add-friend-cont" *ngIf="!people[0].isFriend">
                     <button class="add-friend-btn"><i class="fa fa-user user"></i><span>Add Friend</span></button>
                   </div>
-                  <div class="remove-friend-cont">
+                  <div class="remove-friend-cont" *ngIf="!people[0].isFriend">
                     <button class="remove-friend-btn">Remove</button>
+                  </div>
+
+                  <div class="add-friend-cont" *ngIf="people[0].isFriend">
+                    <button class="add-friend-btn"><i class="fa fa-user user"></i><span>View Profile</span></button>
+                  </div>
+                  <div class="remove-friend-cont" *ngIf="people[0].isFriend">
+                    <button class="remove-friend-btn">Unfriend</button>
                   </div>
                 </div>
               </div>
