@@ -1,4 +1,4 @@
-<div class="main bg-dark">
+<div class="main bg-light bg-gradient">
     hjg
     <div class="cover bg-info">
         
@@ -13,7 +13,7 @@
                                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title="">        
                             </a>
                         </div>
-                        <div class="profile-name">
+                        <div class="profile-name d-flex justify-content-between">
                             <h2>Markins Smithertain</h2>
                         </div>
                         
@@ -42,6 +42,7 @@
             </div>
         </div>
         <!-- ------cover ends--------------- -->
+        
     </div>
     <!-- <div class="container px-4 p-2  topview bg-danger">
         top view
@@ -93,6 +94,7 @@
     </div> -->
 
     <!-- <div class="wrapper">
+
         <div class="profile-card js-profile-card">
           <div class="profile-card__img">
             <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" alt="profile card">
@@ -264,4 +266,109 @@
           </symbol>
         </defs>
       </svg> -->
+
+      <div class="row main_content d-flex justify-content-between">
+        <div class="col col-lg-3 left_side border border-1 border-secondary">
+          
+          <div class="card " >
+            <div class="card-body row">
+              <div class="img_1 col col-4 border border-1" *ngFor="1 of [1, 2, 3, 4, 5, 6]">
+                <img class="img-fluid mx-auto" src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class=" col col-lg-6 center border border-1 border-secondary">
+          
+          <!-- <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Content</p>
+            </div>
+          </div> -->
+
+           <!-- =====start post========== -->
+           <div class="row">
+            <div class="col col-lg-12 col-sm-6">
+              <div class="post-block px-3">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex mt-2">
+                    <div class="mx-auto">
+                      <a href="#!" class="text-dark"><img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="User" class="author-img"></a>
+                    </div>
+                    <div class="mx-3">
+                      <h5 class="mb-0"><a href="#!" class="text-dark">Kiran Acharya</a></h5>
+                      <p class="mb-0 text-muted">5m</p>
+                    </div>
+                  </div>
+                  <div class="post-block__user-options">
+                    <a href="#!" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                      <a class="dropdown-item text-dark" href="#!"><i class="fa fa-pencil mr-1"></i>Edit</a>
+                      <a class="dropdown-item text-danger" href="#!"><i class="fa fa-trash mr-1"></i>Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-block__content mb-2 mx-auto">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam non atque, porro cupiditate commodi? Provident culpa vel sit enim!</p>
+                  <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Content img">
+                </div>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="d-flex">
+                      <a href="#!" class="text-danger mr-2"><span><i class="fa fa-heart"></i></span></a>
+                      <a href="#!" class="text-dark mr-2"><span>Comment</span></a>
+                    </div>
+                    <a href="#!" class="text-dark"><span>Share</span></a>
+                  </div>
+                  <p class="mb-0">Liked by <a href="#!" class="text-muted font-weight-bold">John doe</a> & <a href="#!" class="text-muted font-weight-bold">25 others</a></p>
+                </div>
+                <hr>
+                <div class="post-block__comments">
+                  <!-- Comment Input -->
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Add your comment">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-paper-plane"></i>comment</button>
+                    </div>
+                  </div>
+                  <!-- Comment content -->
+                  <div class="comment-view-box mb-3">
+                    <div class="d-flex mb-2">
+                      <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="User img" class="author-img author-img--small mr-2">
+                      <div>
+                        <h6 class="mb-1"><a href="#!" class="text-dark">John doe</a> <small class="text-muted">1m</small></h6>
+                        <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="d-flex">
+                          <a href="#!" class="text-dark mr-2"><span><i class="fa fa-heart-o"></i></span></a>
+                          <a href="#!" class="text-dark mr-2"><span>Reply</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- More Comments -->
+                  <hr>
+                  <a href="#!" class="text-dark">View More comments <span class="font-weight-bold">(12)</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =========end post =========== -->
+
+        </div>
+        <div class=" col col-lg-3 right_side border border-1 border-secondary">
+          
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Content</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </div>
